@@ -1,7 +1,7 @@
-# Markdown Cell
+
 # Importing Modules and Functions
 
-# Code Cell
+
 # Importing Modules and Functions - Tutorial
 
 # import numpy module. We'll call it as 'np' from here forward
@@ -29,7 +29,7 @@ print("Value of pi is:", pi)
 print(f"Value of pi is: {pi}") # using f strings
 
 
-# Code Cell
+
 # Importing Modules and Functions - Task #1
 # Working with a new module
 
@@ -65,7 +65,7 @@ print ("- Day: ", end = "")
 print (current_date.day)
 
 
-# Code Cell
+
 # Importing Modules and Functions - Task #2
 
 # 1. import the 'datetime' class from the 'datetime' module
@@ -91,7 +91,7 @@ print(f"- Minute: {current_minute}")
 
 
 
-# Code Cell
+
 # Bonus: accounting for timezones
 
 from datetime import datetime
@@ -116,7 +116,7 @@ print(f"Here, it's {current_hour}:{current_minute:02d} {am_pm}") # zero-pad minu
 print(f"- Hour: {current_hour}")
 print(f"- Minute: {current_minute}")
 
-# Code Cell
+
 # Bonus: making a function that tells the time
 
 def whats_the_time(tz): # takes one input (timezone)
@@ -140,10 +140,10 @@ def whats_the_time(tz): # takes one input (timezone)
 # Call the function with "America/New_York" timezone
 whats_the_time("America/New_York")
 
-# Markdown Cell
+
 # Basic Data Types
 
-# Code Cell
+
 # Basic Data Types - Tutorial
 integer = 10
 floating = 10.5
@@ -171,7 +171,7 @@ print("Dictionary:", my_dict)
 print(my_dict.keys())
 
 
-# Code Cell
+
 # Basic Data Types - Task
 
 # 1. Create a list of your favorite movies
@@ -184,10 +184,10 @@ movie_years = [1990, 2001, 2008]
 movie_dict = {"Title": fav_movies, "Year": movie_years}
 print(movie_dict)
 
-# Markdown Cell
+
 # Indexing and Slicing
 
-# Code Cell
+
 # Indexing and Slicing - Tutorial #1
 
 # Make a list of integers
@@ -220,7 +220,7 @@ print()
 # Format: 'start:stop:stepSize'
 print("Skipping every other element:", my_list[0:len(my_list):2]) # here, 2 is the step size
 
-# Code Cell
+
 # Indexing and Slicing - Task #1
 
 # 1. Index 40 from 'my_list'
@@ -229,7 +229,7 @@ print(my_list[3])
 # 2. Slice the values 20 and 30 from 'my_list'
 print(my_list[1:3])
 
-# Code Cell
+
 # Indexing and Slicing - Tutorial #2
 
 # Numpy has an array class too
@@ -247,7 +247,7 @@ print()
 # Index the 5th value
 print(new_array[4])
 
-# Code Cell
+
 # Conditional indexing and slicing - Tutorial
 
 # pull values below 42 (a few ways to do this)
@@ -270,7 +270,7 @@ print(nums_below_list2)
 nums_below_list3 = [num for num in new_array if num < 42]
 print(nums_below_list3)
 
-# Code Cell
+
 # Indexing and Slicing - Task
 
 # Here's what string slicing looks like:
@@ -291,10 +291,10 @@ first_three_char = first_string[0:3]
 
 print(first_three_char)
 
-# Markdown Cell
+
 # Working with DataFrames
 
-# Code Cell
+
 # Working with DataFrames - Tutorial #1
 
 import pandas as pd
@@ -315,7 +315,7 @@ df = pd.DataFrame(data)
 
 print(df)
 
-# Code Cell
+
 # Working with DataFrames - Tutorial #2
 
 # Sorting the DataFrame
@@ -335,7 +335,7 @@ df_sorted_twoCol = df.sort_values(by=["Make", "Price"], ascending=[True, False])
 print("\nDataFrame sorted by Make (ascending) and Price (descending):")
 print(df_sorted_twoCol)
 
-# Code Cell
+
 # Working with DataFrames - Task
 
 # Create a DataFrame with columns `Product`, `Price`, and `Quantity` with at
@@ -354,7 +354,7 @@ my_df = pd.DataFrame(data)
 # Print the DataFrame
 print(my_df)
 
-# Code Cell
+
 # Reading and Writing CSVs - Tutorial #1
 
 # We'll import the 'os' module to help write file paths for saving/reading
@@ -378,7 +378,7 @@ my_df_copy = pd.read_csv(full_path)
 print(my_df_copy)
 
 
-# Code Cell
+
 # Indexing and Modifying DataFrames - Tutorial
 
 my_df = pd.DataFrame({
